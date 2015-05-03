@@ -11,7 +11,7 @@
 
 (defn splash []
   {:status 200
-   :headers {"Content-Type" "text/plain"}
+   :headers {"Content-Type" "text/html"}
    :body (for [kind ["camel" "snake" "kebab"]]
            (format "<a href=\"/%s?input=%s\">%s %s</a><br />"
                    kind sample kind sample))})
